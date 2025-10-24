@@ -1,0 +1,149 @@
+.App {
+  text-align: center;
+}
+
+/* 🎬 Movie Selection Section */
+.movie-selection {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.movie {
+  text-align: center;
+  margin-bottom: 2rem;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.movie:hover {
+  transform: scale(1.05);
+}
+
+.movie-poster {
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.movie-title {
+  margin-top: 10px;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+/* 🎥 Screen Selection Section */
+.screen-selection {
+  display: flex;
+  flex-wrap: wrap; /* Fixed: was 'flex:wrap;' */
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.screen-selection .screen {
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: #f8f8f8;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s;
+}
+
+.screen-selection .screen:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0px 20px rgba(0, 0, 0, 0.3);
+}
+
+.screen.selected {
+  background-color: #b1afaf;
+  color: white;
+}
+
+/* 🎞️ Screen Info */
+.screen-number {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.screen-time {
+  font-size: 1.1rem;
+  color: #888;
+  margin-bottom: 1rem;
+}
+
+/* 💺 Seat Layout */
+.screen-seats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.seat {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 0.5rem;
+  background-color: #f0f0f0;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+}
+
+.seat:hover {
+  transform: scale(1.1);
+}
+
+/* 🟩 Available & Unavailable Seats */
+.seat.available {
+  background-color: #e0ffe0;
+}
+
+.seat.unavailable {
+  background-color: #d04040;
+  color: white;
+  cursor: not-allowed;
+}
+
+/* 💙 Selected Seat */
+.seat.selected {
+  background-color: #00ff00;
+  color: white;
+}
+
+/* 🧩 Utility */
+.movie.selected {
+  border: 3px solid #007bff;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.payment-button{
+  margin-top : 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #007bff;
+  color: white;
+  border-radius : 0.5rem ;
+  cursor : pointer;
+  transition: all 0.2s;
+  
+}
+.payement-button:hover{
+  transform: scale(1.05);
+  box-shadow : 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.payment-button:disabled{
+  cursor : not-allowed;
+  background-color : gray ; 
+
+}
